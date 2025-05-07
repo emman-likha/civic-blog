@@ -3,8 +3,7 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-// ✅ You can now use `motion` and `AnimatePresence` directly
-
+// ✅ Export them directly (no aliasing or re-wrapping)
 export { motion, AnimatePresence }
 
 export const FadeIn = ({ 
