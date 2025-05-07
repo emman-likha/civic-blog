@@ -19,16 +19,16 @@ export const FadeIn = ({
   duration?: number
   [key: string]: any
 }) => {
-  let initial = { opacity: 0 }
-  
+  let initial: { opacity: number; x?: number; y?: number } = { opacity: 0 }
+
   if (direction === 'up') {
-    initial = { ...initial, y: 40 }
+    initial.y = 40
   } else if (direction === 'down') {
-    initial = { ...initial, y: -40 }
+    initial.y = -40
   } else if (direction === 'left') {
-    initial = { ...initial, x: 40 }
+    initial.x = 40
   } else if (direction === 'right') {
-    initial = { ...initial, x: -40 }
+    initial.x = -40
   }
 
   return (
