@@ -1,10 +1,11 @@
 "use client"
 
 import React from 'react'
-import { motion as framerMotion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
-export const motion = framerMotion
-export const AnimatePresence = framerMotion.AnimatePresence
+// ✅ You can now use `motion` and `AnimatePresence` directly
+
+export { motion, AnimatePresence }
 
 export const FadeIn = ({ 
   children, 
@@ -35,7 +36,7 @@ export const FadeIn = ({
     <motion.div
       initial={initial}
       animate={{ opacity: 1, x: 0, y: 0 }}
-      transition={{ duration: duration, delay }}
+      transition={{ duration, delay }}
       {...props}
     >
       {children}
