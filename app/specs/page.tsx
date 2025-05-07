@@ -3,10 +3,20 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { 
-  Tabs, TabsContent, TabsList, TabsTrigger,
-  Accordion, AccordionContent, AccordionItem, AccordionTrigger 
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger
+} from '@/components/ui/tabs'
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
 } from '@/components/ui/accordion'
+
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { ArrowDown, Gauge, Settings, Info, BarChart, Filter, PenTool as Tool, Zap } from 'lucide-react'
 import { FadeIn } from '@/components/motion'
